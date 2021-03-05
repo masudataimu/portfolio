@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+全デバイス共通のスタイルとスマートフォン向けレイアウトの指定
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+/* common.css
+----------------------------------------- */
+body {
+	font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+	font-size: 14px;
+	color: #333;
+	line-height:1.9;
+	text-align: left;
+    -webkit-text-size-adjust: 100%;
+    width: 100%
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color:#333;
+	text-decoration: none;
+}
+.sp {
+	display: block;
+}
+.pc {
+	display: none;
+}
+
+/* header
+----------------------------------------- */
+header {
+	display: flex;
+}
+
+header h1 {
+	/* position: absolute;
+	top: 105px;
+    left: 0; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    margin-left: 5%;
+    font-size: 6vw;
+    font-family: 'Caveat', cursive;
+}
+header .logo a:hover {
+    text-decoration: none;
+}
+
+header h1 img {
+    height: 10vw;
+
+}
+
+nav {
+	/* position: absolute; */
+	/* bottom: 30px; */
+    right: 0;
+	margin: 0 5vw;
+}
+nav ul {
+    font-family: 'Caveat', cursive;
+    font-size: 5vw;
+}
+
+nav ul li {
+	margin-left: 4vw;
+    display: inline;
+    float: none;
+    border-bottom: none;
+    text-align: right;
+    font-size: 3vw;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.socialBtn {
+	position: absolute;
+	top: 112px;
+	right: 10px;
+}
+/* contents
+----------------------------------------- */
+.ttl {
+	margin-bottom: 40px;
+	text-align: center;
+	line-height: 1.0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+    letter-spacing: 0.05em;
+    border-bottom: solid 3px rgb(196 221 231 / 70%);
+    padding-bottom: 4px;
+}
+
+.main.inner h2 .ttl {
+	margin-bottom: 25px;
+}
+.main h3 .ttl {
+	margin-bottom: 12px;
+	text-align: center;
+	line-height: 1.0;
+	font-size: 22px;
+	color: #505050;
+}
+.main p.ttl {
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 1.0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	color: #a5a5a5;
+}
+.contBox {
+	margin: 0 20px;
+}
+.toTop {
+	text-align: center;
+}
+.toTop a {
+	display: block;
+	margin-bottom: 40px;
+	padding: 8px 20px;
+}
+.toTop img {
+	width: 22px;
+	height: 14px;
+}
+.pageNation {
+	position: relative;
+	margin-bottom: 30px;
+}
+.pageNation .pageLeft {
+	position: absolute;
+	left: 20px;
+	top: 0;
+}
+.pageNation .pageRight {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+
+
+
+
+/* PC向けレイアウトの指定：961px～ */
+@media only screen and (min-width: 760px) {
+
+
+/* a:hover {
+	text-decoration: underline;
+} */
+
+/* header
+----------------------------------------- */
+header {
+	display: flex;
+}
+
+header h1 {
+	/* position: absolute;
+	top: 105px;
+    left: 0; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    margin-left: 5%;
+    font-size: 6vw;
+    font-family: 'Caveat', cursive;
+}
+header .logo a:hover {
+    text-decoration: none;
+}
+
+header h1 img {
+    height: 10vw;
+
+}
+
+nav {
+	position: absolute;
+	/* bottom: 30px; */
+    right: 0;
+    margin-right: 10%;
+}
+nav ul {
+    font-family: 'Caveat', cursive;
+    font-size: 5vw;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.socialBtn {
+	position: absolute;
+	top: 112px;
+	right: 10px;
+}
+
+/* contents
+----------------------------------------- */
+/* #main.inner {
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+}
+.contBox {
+	margin: 0;
+}
+.pageNation .pageLeft {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.pageNation .pageRight {
+	position: absolute;
+	right: 0;
+	top: 0;
+} */
+
+/* footer
+----------------------------------------- */
+footer {
+	max-width: 90%;
+	margin: 0 auto;
+}
+footer nav{
+    position: unset;
+    margin-left: 0;
+
+}
+
+} /* PC向け */
